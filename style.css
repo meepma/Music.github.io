@@ -1,0 +1,23 @@
+.heading{
+    font-size: 25px;
+    width: 100%;
+    margin: 0px;
+}
+
+.MUSICNOTE{
+    font-size: 18px;
+    color: whitesmoke;
+}
+
+
+
+.playNowOrFaceTheConsequences{
+    width: 130px;
+    font-size: 22px;
+}
+
+canvas{
+    border-radius: 20px;
+    border: 5px dotted yellowgreen;
+    margin-top: 70px;
+}
