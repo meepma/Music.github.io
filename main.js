@@ -32,8 +32,19 @@ function setup(){
 
 function draw(){
 image(video,0,0,600,500);
-}
+song1_status=song1.isPlaying();
+song2_status=song2.isPlaying();
+fill("yellow");
+stroke("black");
+if(leftWristscore>0.2){
 
+circle(leftWristX,leftWristY,20);
+song2.stop();
+if(song1_status==false){
+    song1.play();
+}
+}
+}
 
 function modelLoaded(){
 console.log("poseNet is loaded");
