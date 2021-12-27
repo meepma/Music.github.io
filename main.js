@@ -10,6 +10,10 @@ rightWristscore=0;
 
 song1="";
 song2="";
+song1_status="";
+song2_status="";
+
+
 function preload(){
     song1=loadSound("BTS.mp3");
     song2=loadSound("LovingCaliber.mp3");
@@ -36,7 +40,7 @@ song1_status=song1.isPlaying();
 song2_status=song2.isPlaying();
 fill("yellow");
 stroke("black");
-if(leftWristscore>0.2){
+if(leftWristscore>0){
 
 circle(leftWristX,leftWristY,20);
 song2.stop();
@@ -44,6 +48,14 @@ if(song1_status==false){
     song1.play();
 }
 }
+if(rightWristscore>0){
+
+    circle(rightWristX,rightWristY,20);
+    song1.stop();
+    if(song2_status==false){
+        song2.play();
+    }
+    }
 }
 
 function modelLoaded(){
